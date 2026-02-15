@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HTML Practice 6 - Tables</title>
+
+<style type="text/css">
+    /* Centers the table container */
+    .table-center {
+        text-align: center;
+    }
+
+    /* Centers the table itself (non-IE) and sets width */
+    .schedule-table {
+        margin: auto;
+        width: 550px;
+        border-collapse: separate;
+        border-spacing: 8px;
+        border: 2px solid #333;
+        background-color: #FFFFFF;
+    }
+
+    /* Caption formatting */
+    .schedule-caption {
+        color: #003300;
+        font-weight: bold;
+        font-size: 1.6em;
+        padding: 10px 0;
+        caption-side: top;
+    }
+
+    /* First column styling via colgroup */
+    .courses-col {
+        background-color: #CCCCCC;
+        width: 25%;
+    }
+
+    /* Remaining day columns (5 columns = 75% total) */
+    .days-col {
+        width: 15%;
+    }
+
+    /* Day-of-week headings */
+    .day-head {
+        background-color: #99FF66;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
+    .course-head,
+    .course-cell {
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
+    th, td {
+        border: 1px solid #333;
+        padding: 10px;
+        vertical-align: middle;
+        text-align: center;
+        background-clip: padding-box;
+    }
+
+    .time-cell {
+        font-size: 1.1em;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="table-center">
+    <table class="schedule-table" border="1" cellspacing="8" cellpadding="10">
+        <caption class="schedule-caption">My Class Schedule</caption>
+
+        <colgroup class="courses-col"></colgroup>
+        <colgroup class="days-col" span="5"></colgroup>
+
+        <tr>
+            <th class="course-head">Courses</th>
+            <th class="day-head">Monday</th>
+            <th class="day-head">Tuesday</th>
+            <th class="day-head">Wednesday</th>
+            <th class="day-head">Thursday</th>
+            <th class="day-head">Friday</th>
+        </tr>
+
+        <tr>
+            <th class="course-cell">INFO 1120</th>
+            <td></td>
+            <td class="time-cell">9-11</td>
+            <td></td>
+            <td class="time-cell">9-11</td>
+            <td rowspan="2"></td>
+        </tr>
+
+        <tr>
+            <th class="course-cell">MATH 1010</th>
+            <td class="time-cell" colspan="4">12-1</td>
+        </tr>
+
+        <tr>
+            <th class="course-cell">INFO 2420</th>
+            <td class="time-cell" colspan="5">Online Available 24/7</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
