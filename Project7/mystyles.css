@@ -1,0 +1,102 @@
+/* Step 3: Body Styling */
+body {
+    background-color: lightpink; /* Or add a background-image */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Step 1: Fixed-Width Centered Layout */
+#container {
+    width: 900px;
+    margin: 0 auto; /* This centers the container on the page */
+    background-color: #ffffff;
+}
+
+/* Step 4: Styling the <header> */
+header {
+    width: 900px;
+    height: 150px; /* Adjust height based on your banner/logo */
+    background-color: #cccccc; /* Change to match your color palette */
+    box-sizing: border-box; /* Prevents padding from increasing the width */
+}
+
+#logo {
+    float: left;
+    margin: 10px;
+}
+
+#banner {
+    float: left;
+    margin: 10px;
+}
+
+/* Styling & Including the <nav> Box inside the <header> */
+nav {
+    width: 30%;
+    float: right;
+    margin-top: 20px; 
+    text-align: right; /* Aligns buttons nicely to the right */
+}
+
+/* Styling links to look like CSS buttons */
+nav a {
+    display: inline-block;
+    background-color: #333333; /* Base button color */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 8px;
+    margin: 2px;
+    font-size: 12px; /* Large enough to balance the right side */
+    font-weight: bold;
+    border-radius: 5px;
+
+}
+
+/* Hover pseudo-class for links */
+nav a:hover {
+    background-color: #666666; /* Changes color when hovered */
+    color: #ffcc00;
+}
+
+/* Step 5: Styling <section> Box */
+section {
+    width: 900px;
+    background-image: url('Images/backimage.jpg'); /* Update with your exact image name */
+    background-repeat: repeat-y;
+    overflow: auto; /* Ensures the section wraps around floating content inside it */
+}
+
+/* Step 6: Styling the <article> Box */
+article {
+    width: 800px;
+    margin: 0 auto; /* Centers the 800px article inside the 900px section */
+    padding: 20px 0;
+}
+
+article p {
+    text-align: left; /* Explicitly ensuring paragraphs are NOT centered */
+    line-height: 1.5;
+}
+
+.mini-tribute-img {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+/* Step 7: Styling the <footer> Box */
+footer {
+    width: 900px;
+    height: 100px;
+    background-color: #cccccc; /* Change to match your color palette */
+    text-align: center; /* Centers the text inside the footer */
+    padding-top: 20px;
+    box-sizing: border-box;
+    clear: both; /* Ensures the footer sits below all floating elements */
+}
+
+#logoImage {
+    width: 150px;
+    height: 150px;
+}
