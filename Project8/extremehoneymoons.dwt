@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><!-- TemplateBeginEditable name="PageTitle" -->Business Name<!-- TemplateEndEditable --></title>
+  <link rel="stylesheet" href="mystyles.css">
+  <link rel="stylesheet" href="print.css" media="print">
+  <script src="myscripts.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <img src="Images/logo.png" alt="Business logo">
+    <img src="Images/banner.png" alt="Business banner">
+  </header>
+
+  <nav>
+    <a href="Home.html">Home</a>
+    <a href="AboutUs.html">About Us</a>
+    <a href="Tributes.html">Tributes</a>
+    <a href="Survey.html">Survey</a>
+    <a href="Links.html">Favorite Links</a>
+  </nav>
+
+  <main>
+    <!-- TemplateBeginEditable name="PageContent" -->
+    <section>
+      <h1>Page Content Goes Here</h1>
+    </section>
+    <!-- TemplateEndEditable -->
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Business Name</p>
+  </footer>
+</body>
+</html>
